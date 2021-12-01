@@ -79,8 +79,12 @@ Output:
 [8, 4, 5]
 */
 
-export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+export function returnAsAnArray() {
+    const arr = []
+    for (let arg of arguments) {
+        arr.push(arg);
+    }
+    return arr;
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string

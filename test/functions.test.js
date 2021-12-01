@@ -42,5 +42,5 @@ test('returnsAsAnArray should take in three numbers and return those numbers in 
     const expected = [1, 2, 3];
     const actual = returnAsAnArray(1, 2, 3);
 
-    expect.equal(actual, expected, 'should return [1, , 3]');
+    expect.deepEqual(actual, expected, 'should return [1, 2, 3]');
 });
