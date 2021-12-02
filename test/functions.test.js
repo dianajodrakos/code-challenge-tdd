@@ -3,6 +3,7 @@ import {
     addExclamationPoints, 
     divideThenMultiply,
     getSecondItem,
+    getLastItem,
     makeLuckyGreeting,
     multiplyBy12ThenHalve, 
     multiplyBySeven,
@@ -70,3 +71,12 @@ test('getSecondItem should take an array and return the second item in the array
 
     expect.equal(actual, expected, 'should return "apple"');
 });
+
+test('getLastItem should take an array and return the LAST item in the array, no matter the array\'s length', (expect) => {
+    const array = ['kiwi', 'apple', 'orange', 'plum'];
+
+    const expected = 'plum';
+    const actual = getLastItem(array);
+
+    expect.equal(actual, expected, 'should return "plum"');
+})
