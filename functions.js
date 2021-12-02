@@ -119,9 +119,13 @@ Output:
 'Hello! Your lucky number for the day is 12.'
 */
 
-export function makeLuckyGreeting(firstNumber, secondNumber) {
-    return true;
-}
+export function makeLuckyGreeting() {
+    let luckyNumber = 0
+    for (let arg of arguments) {
+        luckyNumber = luckyNumber + arg;
+    };
+    return `Hello! Your lucky number for the day is ${luckyNumber}.`;
+};
 
 // This function should take an array and return the second item in the array
 
