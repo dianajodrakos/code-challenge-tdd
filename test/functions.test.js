@@ -2,6 +2,7 @@
 import { 
     addExclamationPoints, 
     divideThenMultiply,
+    getSecondItem,
     makeLuckyGreeting,
     multiplyBy12ThenHalve, 
     multiplyBySeven,
