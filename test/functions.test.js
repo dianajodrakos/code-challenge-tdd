@@ -2,6 +2,7 @@
 import { 
     addExclamationPoints, 
     divideThenMultiply,
+    makeLuckyGreeting,
     multiplyBy12ThenHalve, 
     multiplyBySeven,
     returnAsAnArray,
@@ -51,4 +52,12 @@ test('returnAsAString should take in three numbers and return those numbers mush
     const actual = returnAsAString(1, 2, 3);
     
     expect.equal(actual, expected, 'should return "123"');
-}))
+}));
+
+test('makeLuckyGreeting should take in two numbers and return a greeting announcing that the sum of those numbers is today\'s lucky number', (expect) => {
+    const expected = 12;
+    const actual = makeLuckyGreeting(8, 4);
+
+    expect.equal(actual, expected, 'should return 12')
+});
+
