@@ -2,6 +2,7 @@
 import { 
     addExclamationPoints, 
     divideThenMultiply,
+    getRandomNumber,
     getSecondItem,
     getLastItem,
     makeLuckyGreeting,
@@ -79,4 +80,11 @@ test('getLastItem should take an array and return the LAST item in the array, no
     const actual = getLastItem(array);
 
     expect.equal(actual, expected, 'should return "plum"');
-})
+});
+
+test('getRandomNumber should make a random number between 0 and 5', (expect) => {
+    const actual = true;
+    const expected = getRandomNumber();
+
+    expect.equal(actual, 0 <= expected <= 5, `${expected} is a number between 0 and 5`);
+});
