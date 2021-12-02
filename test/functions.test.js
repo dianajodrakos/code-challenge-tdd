@@ -61,3 +61,11 @@ test('makeLuckyGreeting should take in two numbers and return a greeting announc
     expect.equal(actual, expected, 'should return 12')
 });
 
+test('getSecondItem should take an array and return the second item in the array', (expect) => {
+    const array = ['kiwi', 'apple', 'orange', 'plum'];
+
+    const expected = 'apple';
+    const actual = getSecondItem(array);
+
+    expect.equal(actual, expected, 'should return "apple"');
+});
