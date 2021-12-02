@@ -80,7 +80,7 @@ Output:
 */
 
 export function returnAsAnArray() {
-    const arr = []
+    const arr = [];
     for (let arg of arguments) {
         arr.push(arg);
     }
@@ -99,8 +99,12 @@ Output:
 '845'
 */
 
-export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
-    return true;
+export function returnAsAString() {
+    let str = '';
+    for (let arg of arguments) {
+        str = str.concat(arg);
+    }
+    return str;
 }
 
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number
