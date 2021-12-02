@@ -55,7 +55,7 @@ test('returnAsAString should take in three numbers and return those numbers mush
 }));
 
 test('makeLuckyGreeting should take in two numbers and return a greeting announcing that the sum of those numbers is today\'s lucky number', (expect) => {
-    const expected = 12;
+    const expected = 'Hello! Your lucky number for the day is 12.';
     const actual = makeLuckyGreeting(8, 4);
 
     expect.equal(actual, expected, 'should return 12')
